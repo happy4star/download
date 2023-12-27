@@ -1,10 +1,10 @@
 body{
   background-color: rgb(167, 204, 216);
 }
-h1{
+h2{
   color: white;
 }
-h2{
+h4{
   color: white;
 }
 header{
@@ -14,4 +14,7 @@ header{
 }
 div{
   color:rgb(25, 134, 242) ;
+}
+h1{
+  color: white;
 }
