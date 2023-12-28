@@ -1,20 +1,16 @@
 body{
   background-color: rgb(167, 204, 216);
 }
-h2{
+.midasi,h2,h3{
   color: white;
 }
-h4{
-  color: white;
-}
-header{
+
+/* header{
   background-color: skyblue;
-  color: rgb(25, 134, 242);
+  color: rgb(25, 134, 242); 
   
-}
-div{
-  color:rgb(25, 134, 242) ;
-}
-h1{
-  color: white;
+ } */
+.head {
+  color: rgb(67, 152, 237);
+  background-color: skyblue;
 }
