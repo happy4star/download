@@ -8,23 +8,63 @@
 </head>
 
 <body>
-  <div class="head"><header> <h1 style="text-align:center">たにの写真展</h1></header>
+  <div class="head">
+    <header>
+      <h1 style="text-align:center">たにの写真展</h1>
+    </header>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
-    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"
+      type="text/javascript"></script>
+  </div>
   <link rel="stylesheet" href="style.css">
-  <div class="midasi"><h1>写真を高画質でダウンロードすることができます。</h1></div>
-<h3>写真の上で右クリック（スマートフォンは長押し）して、ダウンロードを押してください。</h3>
+  <div class="midasi">
+    <h1>写真を高画質でダウンロードすることができます。</h1>
+  </div>
+  <h3>画像をクリックで拡大できます。</h3>
   <!-- <img src="IMG_3074.jpg" alt="花火の写真１" width="20%" height="20%">
   <img src="IMG_3075.jpg" alt="花火の写真２" width="20%" height="20%">
   <img src="IMG_3076.jpg" alt="花火の写真3" width="20%" height="20%">
   <img src="IMG_3233.jpg" alt="花火の写真4" width="20%" height="20%"> -->
-  <a href="IMG_3074.jpg" data-lightbox="group"><img src="IMG_3074.jpg" width="20%"></a>
+
+  <!-- <a href="IMG_3074.jpg" data-lightbox="group"><img src="IMG_3074.jpg" width="20%"></a>
+  <p><button><a href="IMG_3074.jpg" download="IMG_3074.jpg">写真をダウンロード</a></button></p>
   <a href="IMG_3075.jpg" data-lightbox="group"><img src="IMG_3075.jpg" width="20%"></a>
+  <p><button><a href="IMG_3075.jpg" download="IMG_3075.jpg">写真をダウンロード</a></button></p>
   <a href="IMG_3076.jpg" data-lightbox="group"><img src="IMG_3076.jpg" width="20%"></a>
+  <p><button><a href="IMG_3076.jpg" download="IMG_3076.jpg">写真をダウンロード</a></button></p>
   <a href="IMG_3233.jpg" data-lightbox="group"><img src="IMG_3233.jpg" width="20%"></a>
-  <button><a href="IMG_3074.jpg" download="IMG_3074.jpg">写真をダウンロード</a></button>
+  <p><button><a href="IMG_3233.jpg" download="IMG_3233.jpg">写真をダウンロード</a></button></p> -->
+
+
+
+  <a href="IMG_3074.jpg" data-lightbox="group"><img src="IMG_3074.jpg" width="20%"></a>
+  <a href="IMG_3074.jpg" download=""><button id="No1" onclick="changeColor1()">写真をダウンロード</button></a>
+  <a href="IMG_3075.jpg" data-lightbox="group"><img src="IMG_3075.jpg" width="20%"></a>
+  <a href="IMG_3075.jpg" download=""><button id="No2" onclick="changeColor2()">写真をダウンロード</button></a>
+  <a href="IMG_3076.jpg" data-lightbox="group"><img src="IMG_3076.jpg" width="20%"></a>
+  <a href="IMG_3076.jpg" download=""><button id="No3" onclick="changeColor3()">写真をダウンロード</button></a>
+  <a href="IMG_3233.jpg" data-lightbox="group"><img src="IMG_3233.jpg" width="20%"></a>
+  <a href="IMG_3233.jpg" download=""><button id="No4" onclick="changeColor4()">写真をダウンロード</button></a>
+<script>
+function changeColor1(){
+  document.getElementById('No1').style.backgroundColor = 'red';
+}
+function changeColor2(){
+  document.getElementById('No2').style.backgroundColor = 'red';
+}
+function changeColor3(){
+  document.getElementById('No3').style.backgroundColor = 'red';
+}
+function changeColor4(){
+  document.getElementById('No4').style.backgroundColor = 'red';
+}
+
+
+
+
+</script>
+
 </body>
 
 </html>
