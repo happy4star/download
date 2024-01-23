@@ -18,8 +18,8 @@ button{
   padding: 5px 20px;
   background-color: rgb(119, 223, 249);
   color: white;
-  border-bottom: 3px solid rgb(25, 50, 57);
+  
   border-radius: 100vh;
-  margin-top: 3px;
+  border-style:none ;
 
 }
