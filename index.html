@@ -48,17 +48,28 @@
   <a href="IMG_3233.jpg" download=""><button id="No4" onclick="changeColor4()">写真をダウンロード</button></a>
 <script>
 function changeColor1(){
-  document.getElementById('No1').style.backgroundColor = 'red';
+  document.getElementById('No1').style.backgroundColor = 'rgb(25, 75, 87)';
 }
 function changeColor2(){
-  document.getElementById('No2').style.backgroundColor = 'red';
+  document.getElementById('No2').style.backgroundColor = 'rgb(25, 75, 87)';
 }
 function changeColor3(){
-  document.getElementById('No3').style.backgroundColor = 'red';
+  document.getElementById('No3').style.backgroundColor = 'rgb(25, 75, 87)';
 }
 function changeColor4(){
-  document.getElementById('No4').style.backgroundColor = 'red';
+  document.getElementById('No4').style.backgroundColor = 'rgb(25, 75, 87)';
 }
+const browserName = navigator.appName;
+const browserVersion = navigator.appVersion;
+
+console.log("ブラウザ名: " + browserName);
+console.log("ブラウザバージョン: " + browserVersion);
+const osName = navigator.platform;
+
+console.log("OS名: " + osName);
+fetch('https://api.ipify.org?format=json')
+  .then(response => response.json())
+  .then(data => console.log("IPアドレス: " + data.ip));
 
 
 
