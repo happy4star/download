@@ -37,44 +37,78 @@
   <p><button><a href="IMG_3233.jpg" download="IMG_3233.jpg">写真をダウンロード</a></button></p> -->
 
 
-
-  <a href="IMG_3074.jpg" data-lightbox="group"><img src="IMG_3074.jpg" width="20%"></a>
-  <a href="IMG_3074.jpg" download=""><button id="No1" onclick="changeColor1()">写真をダウンロード</button></a>
-  <a href="IMG_3075.jpg" data-lightbox="group"><img src="IMG_3075.jpg" width="20%"></a>
-  <a href="IMG_3075.jpg" download=""><button id="No2" onclick="changeColor2()">写真をダウンロード</button></a>
-  <a href="IMG_3076.jpg" data-lightbox="group"><img src="IMG_3076.jpg" width="20%"></a>
-  <a href="IMG_3076.jpg" download=""><button id="No3" onclick="changeColor3()">写真をダウンロード</button></a>
-  <a href="IMG_3233.jpg" data-lightbox="group"><img src="IMG_3233.jpg" width="20%"></a>
-  <a href="IMG_3233.jpg" download=""><button id="No4" onclick="changeColor4()">写真をダウンロード</button></a>
-<script>
-function changeColor1(){
-  document.getElementById('No1').style.backgroundColor = 'rgb(25, 75, 87)';
-}
-function changeColor2(){
-  document.getElementById('No2').style.backgroundColor = 'rgb(25, 75, 87)';
-}
-function changeColor3(){
-  document.getElementById('No3').style.backgroundColor = 'rgb(25, 75, 87)';
-}
-function changeColor4(){
-  document.getElementById('No4').style.backgroundColor = 'rgb(25, 75, 87)';
-}
-const browserName = navigator.appName;
-const browserVersion = navigator.appVersion;
-
-console.log("ブラウザ名: " + browserName);
-console.log("ブラウザバージョン: " + browserVersion);
-const osName = navigator.platform;
-
-console.log("OS名: " + osName);
-fetch('https://api.ipify.org?format=json')
-  .then(response => response.json())
-  .then(data => console.log("IPアドレス: " + data.ip));
+  <div class="photo">
+    <ul>
+      <li>
+        <a href="IMG_3074.jpg" data-lightbox="group"><img src="IMG_3074.jpg" width="20%"></a>
+        <p> <a href="IMG_3074.jpg" download=""><button id="No1" onclick="changeColor1()">写真をダウンロード</button></a></p>
+      </li>
+      <li>
+        <a href="IMG_3075.jpg" data-lightbox="group"><img src="IMG_3075.jpg" width="20%"></a>
+        <p><a href="IMG_3075.jpg" download=""><button id="No2" onclick="changeColor2()">写真をダウンロード</button></a></p>
+      </li>
+      <li>
+        <a href="IMG_3076.jpg" data-lightbox="group"><img src="IMG_3076.jpg" width="20%"></a>
+        <p><a href="IMG_3076.jpg" download=""><button id="No3" onclick="changeColor3()">写真をダウンロード</button></a></p>
+      </li>
+      <li>
+        <a href="IMG_3233.jpg" data-lightbox="group"><img src="IMG_3233.jpg" width="20%"></a>
+        <p><a href="IMG_3233.jpg" download=""><button id="No4" onclick="changeColor4()">写真をダウンロード</button></a></p>
+      </li>
 
 
+    </ul>
+  </div>
+  <dl>
 
 
-</script>
+    <div class="konosaitonituite">
+      <dt>
+        <h2>このサイトについて</h2>
+      </dt>
+    </div>
+    <hr>
+    <dd>
+      <h3>パソコンが好きなS高生が暇な時間に作っているページです。
+        <br>
+        少しずつデザインが変わったりします。
+    </dd>
+    <br><br>
+    <div class="instagram"> <a href="https://www.instagram.com/tani_camera2439/">Instagramはこちらから</a> </div>
+    </h3>
+
+  </dl>
+  <script>
+    function changeColor1() {
+      document.getElementById('No1').style.backgroundColor = 'rgb(25, 75, 87)';
+    }
+    function changeColor2() {
+      document.getElementById('No2').style.backgroundColor = 'rgb(25, 75, 87)';
+    }
+    function changeColor3() {
+      document.getElementById('No3').style.backgroundColor = 'rgb(25, 75, 87)';
+    }
+    function changeColor4() {
+      document.getElementById('No4').style.backgroundColor = 'rgb(25, 75, 87)';
+    }
+
+
+    const browserName = navigator.appName;
+    const browserVersion = navigator.appVersion;
+
+    console.log("ブラウザ名: " + browserName);
+    console.log("ブラウザバージョン: " + browserVersion);
+    const osName = navigator.platform;
+
+    console.log("OS名: " + osName);
+    fetch('https://api.ipify.org?format=json')
+      .then(response => response.json())
+      .then(data => console.log("IPアドレス: " + data.ip));
+
+
+
+
+  </script>
 
 </body>
 
